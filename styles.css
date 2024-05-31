@@ -1,0 +1,22 @@
+li{
+    display: flex;
+}
+input{
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+.form-container{
+    position: relative;
+}
+.form-logo{
+    position: absolute;
+
+}
+button{
+   /* margin: 20px 2px 2px 2px; */
+    padding: 2px 8px;
+    background-color: blue;
+    color: white;
+    
+
+}
