@@ -4,24 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="./styles.css">
+<!-- <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/solid.css">
+<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/thinline.css"> -->
+
+
     <title>Document</title>
    
 </head>
 <body>
-<nav class="navbar">
-    <ul class="flex gap-x-5 px-4 py-4">
-        <li class="font-bold shadow-md ">Safety Audit</li>
-        <li> <a href=""><box-icon name='arrow-back'></box-icon></a></li>
-        <li> <a href=""><box-icon name='skip-next'></box-icon></a></li>
+<nav class="navbar shadow flex items-center">
+  
+    <ul class="flex  gap-x-5 px-4 py-3">
+        <li class="font-bold  gap-x-2  logo-text " ><img src="images/logo.jpg" alt="logo" class="w-7 logo-img">Safety Audit</li>
+        <li > <a href=""><box-icon name='arrow-back'></box-icon></a></li>
+        <li class="logo-text"> <a href=""><box-icon name='arrow-back' rotate='180' ></box-icon></a></li>
         <li> <a href=""><box-icon name='cut' ></box-icon></a></li>
         <li> <a href=""><box-icon name='copy'></box-icon></a></li>
         <li> <a href=""><box-icon name='paste'></box-icon></a></li>
     </ul>
 </nav>
-<div class=" main h-screen w-screen  flex ">
-<div class="left h-full w-3/12  py-20 px-4">
+<div class=" main   flex ">
+<div class="left  w-3/12  py-16 px-4">
+    <div class="chart">
   <h4>Charts</h4>
-    <ul class="flex gap-x-5">
+    <ul class="flex gap-x-5 ">
     <li><box-icon name='pie-chart-alt'></box-icon></li>
 <li><box-icon name='bar-chart'></box-icon></li>
 <li><box-icon name='line-chart' ></box-icon></li>
@@ -29,49 +36,57 @@
 <li><box-icon name='chart'></box-icon></li>
 <li><box-icon name='line-chart-down' ></box-icon></li>
 <li><box-icon name='bar-chart-square'></box-icon></li></ul>
-<br>
-<h4>Form Fields</h4>
+</div>
+<div class="form-field">
+<h4 class="font-bold my-3">Form Fields</h4>
 
-<div class="form-container">
-    <box-icon class="form-logo" name='search' ></box-icon>
-<input type="text" >
+<div class="form-container flex items-center  px-2 py-1 ">
+    <box-icon class="form-logo " name='search' ></box-icon>
+<input class="text-center search" type="text" placeholder="Search...">
 </div>
 <br>
-<ul>
-<li class="flex"><box-icon name='folder-open'></box-icon>Facility Complaints</li>
-<li class="flex"><box-icon name='folder-open'></box-icon>Service Requests</li>
-<li class="flex"><box-icon name='folder-open'></box-icon>Subscription </li>
-    <ul class="px-10">
-    <li class="flex"><box-icon name='comment-detail'></box-icon>Complaints</li>
-<li><box-icon name='history' ></box-icon>Created on</li>
-<li><box-icon name='devices' ></box-icon>Date of Execution</li>
+<ul class="left-list ">
+<li class="flex"><box-icon name='chevron-right' ></box-icon><box-icon name='folder-open'></box-icon>Facility Complaints</li>
+<li class="flex"><box-icon name='chevron-right' ></box-icon><box-icon name='folder-open'></box-icon>Service Requests</li>
+<li class="flex"><box-icon name='chevron-right' rotate='90' ></box-icon><box-icon name='folder-open'></box-icon>Subscription </li>
+    <ul class="px-4 mx-8 left-list-item">
+    <li class="flex items-center"><box-icon name='comment-detail'></box-icon>Complaints</li>
+<li class="flex items-center"><box-icon name='history' ></box-icon>Created on</li>
+<li class="flex items-center"><box-icon name='devices' ></box-icon>Date of Execution</li>
 </ul>
 
 
 
-<li><box-icon name='folder-open'></box-icon>Project</li>
-    <ul class="px-10">
-        <li><box-icon name='comment-detail'></box-icon>Complaints</li>
-    <li><box-icon name='history' ></box-icon>Created on</li>
-    <li><box-icon name='devices' ></box-icon>Date of Execution</li>
+<li class="flex items-center"><box-icon name='chevron-right' rotate='90' ></box-icon><box-icon name='folder-open'></box-icon>Project</li>
+    <ul class="px-4 mx-8 left-list-item">
+        <li class="flex items-center"><box-icon name='comment-detail'></box-icon>Complaints</li>
+    <li class="flex items-center"><box-icon name='history' ></box-icon>Created on</li>
+    <li class="flex items-center"><box-icon name='devices' ></box-icon>Date of Execution</li>
     </ul>
+    <li class="flex"><box-icon name='chevron-right' rotate='90' ></box-icon><box-icon name='folder-open'></box-icon>Contracts </li>
+    <ul class="px-4 mx-8 left-list-item">
+    <li class="flex items-center"><box-icon name='comment-detail'></box-icon>Complaints</li>
+<li class="flex items-center"><box-icon name='history' ></box-icon>Created on</li>
+<li class="flex items-center"><box-icon name='devices' ></box-icon>Date of Execution</li>
+</ul>
 
 
 </ul>
+</div>
 </div>
 <!-- div-center  -->
-<img src="./images/graph.jpg" class="cente h-full w-6/12 bg-green-300" alt="">
+<img src="./images/graph.jpg" class="center w-6/12 h-full " alt="graph-table">
 <!-- div-center -->
-<div class="right h-full w-3/12 ">
-    <ul class="flex px-5 gap-x-5">
-        <li class="border-black-200">Filter</li>
-        <li>Chat</li>
-        <li>History</li>
+<div class="right  w-3/12 ">
+    <ul class="flex px-5 py-5 gap-x-5">
+        <li class="purple-border"><box-icon name='filter'></box-icon></li>
+        <li><box-icon name='chat'></box-icon></li>
+        <li><box-icon name='history'></box-icon></li>
     </ul>
+    
+    <h4 class="flex mx-2"><box-icon name='list-ul'></box-icon>Form Settings</h4>
     <br>
-    <h4 class="flex"><box-icon name='list-ul'></box-icon>Form Settings</h4>
-    <br>
-    <form>
+    <form class="border-2 mx-2 px-8 py-8 form-setting-container">
     <label for="name">Name</label>
     <br/>
     <input type="text" name="name" id="name">
@@ -81,7 +96,7 @@
     <input type="text" id="description" name="description">
 </form>
 <br/>
-<button >Design</button>
+<button class="btn "><box-icon name='line-chart-down' rotate='270' color='#ffffff' ></box-icon>Design <box-icon name='right-arrow-alt' type='solid' flip='vertical' color='#ffffff' ></box-icon></button>
 </div>
 </div>
 
